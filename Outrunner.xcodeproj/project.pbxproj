@@ -19,6 +19,9 @@
 		EA9630A7208E955600A1B26E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9630A6208E955600A1B26E /* ExtensionDelegate.swift */; };
 		EA9630A9208E955600A1B26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9630A8208E955600A1B26E /* Assets.xcassets */; };
 		EA9630AD208E955600A1B26E /* OutrunnerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EA963093208E955600A1B26E /* OutrunnerWatch.app */; };
+		EA9630B9208E95E200A1B26E /* GPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9630B8208E95E200A1B26E /* GPS.swift */; };
+		EA9630BA208E95E200A1B26E /* GPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9630B8208E95E200A1B26E /* GPS.swift */; };
+		EA9630BD208E97D400A1B26E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9630BC208E97D400A1B26E /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,8 @@
 		EA9630A6208E955600A1B26E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		EA9630A8208E955600A1B26E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA9630AA208E955600A1B26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA9630B8208E95E200A1B26E /* GPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPS.swift; sourceTree = "<group>"; };
+		EA9630BC208E97D400A1B26E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9630BD208E97D400A1B26E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +112,9 @@
 				EA96307E208E94AA00A1B26E /* Outrunner */,
 				EA963094208E955600A1B26E /* OutrunnerWatch */,
 				EA9630A3208E955600A1B26E /* OutrunnerWatch Extension */,
+				EA9630B7208E95B700A1B26E /* GPS */,
 				EA96307D208E94AA00A1B26E /* Products */,
+				EA9630BB208E97D400A1B26E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +160,22 @@
 				EA9630AA208E955600A1B26E /* Info.plist */,
 			);
 			path = "OutrunnerWatch Extension";
+			sourceTree = "<group>";
+		};
+		EA9630B7208E95B700A1B26E /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				EA9630B8208E95E200A1B26E /* GPS.swift */,
+			);
+			path = GPS;
+			sourceTree = "<group>";
+		};
+		EA9630BB208E97D400A1B26E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA9630BC208E97D400A1B26E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +315,7 @@
 			files = (
 				EA963082208E94AA00A1B26E /* ViewController.swift in Sources */,
 				EA963080208E94AA00A1B26E /* AppDelegate.swift in Sources */,
+				EA9630B9208E95E200A1B26E /* GPS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +325,7 @@
 			files = (
 				EA9630A7208E955600A1B26E /* ExtensionDelegate.swift in Sources */,
 				EA9630A5208E955600A1B26E /* InterfaceController.swift in Sources */,
+				EA9630BA208E95E200A1B26E /* GPS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
