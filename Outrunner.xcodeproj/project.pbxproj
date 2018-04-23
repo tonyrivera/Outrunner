@@ -12,7 +12,56 @@
 		EA963085208E94AA00A1B26E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA963083208E94AA00A1B26E /* Main.storyboard */; };
 		EA963087208E94AA00A1B26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA963086208E94AA00A1B26E /* Assets.xcassets */; };
 		EA96308A208E94AA00A1B26E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA963088208E94AA00A1B26E /* LaunchScreen.storyboard */; };
+		EA963097208E955600A1B26E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA963095208E955600A1B26E /* Interface.storyboard */; };
+		EA963099208E955600A1B26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA963098208E955600A1B26E /* Assets.xcassets */; };
+		EA9630A0208E955600A1B26E /* OutrunnerWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA96309F208E955600A1B26E /* OutrunnerWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA9630A5208E955600A1B26E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9630A4208E955600A1B26E /* InterfaceController.swift */; };
+		EA9630A7208E955600A1B26E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9630A6208E955600A1B26E /* ExtensionDelegate.swift */; };
+		EA9630A9208E955600A1B26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9630A8208E955600A1B26E /* Assets.xcassets */; };
+		EA9630AD208E955600A1B26E /* OutrunnerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EA963093208E955600A1B26E /* OutrunnerWatch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA9630A1208E955600A1B26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA963074208E94AA00A1B26E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA96309E208E955600A1B26E;
+			remoteInfo = "OutrunnerWatch Extension";
+		};
+		EA9630AB208E955600A1B26E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA963074208E94AA00A1B26E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA963092208E955600A1B26E;
+			remoteInfo = OutrunnerWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA9630B1208E955600A1B26E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA9630A0208E955600A1B26E /* OutrunnerWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA9630B5208E955600A1B26E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EA9630AD208E955600A1B26E /* OutrunnerWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EA96307C208E94AA00A1B26E /* Outrunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outrunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +71,26 @@
 		EA963086208E94AA00A1B26E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA963089208E94AA00A1B26E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA96308B208E94AA00A1B26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA963093208E955600A1B26E /* OutrunnerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutrunnerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA963096208E955600A1B26E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EA963098208E955600A1B26E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA96309A208E955600A1B26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA96309F208E955600A1B26E /* OutrunnerWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OutrunnerWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9630A4208E955600A1B26E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EA9630A6208E955600A1B26E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EA9630A8208E955600A1B26E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA9630AA208E955600A1B26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EA963079208E94AA00A1B26E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA96309C208E955600A1B26E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				EA96307E208E94AA00A1B26E /* Outrunner */,
+				EA963094208E955600A1B26E /* OutrunnerWatch */,
+				EA9630A3208E955600A1B26E /* OutrunnerWatch Extension */,
 				EA96307D208E94AA00A1B26E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				EA96307C208E94AA00A1B26E /* Outrunner.app */,
+				EA963093208E955600A1B26E /* OutrunnerWatch.app */,
+				EA96309F208E955600A1B26E /* OutrunnerWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +133,27 @@
 			path = Outrunner;
 			sourceTree = "<group>";
 		};
+		EA963094208E955600A1B26E /* OutrunnerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				EA963095208E955600A1B26E /* Interface.storyboard */,
+				EA963098208E955600A1B26E /* Assets.xcassets */,
+				EA96309A208E955600A1B26E /* Info.plist */,
+			);
+			path = OutrunnerWatch;
+			sourceTree = "<group>";
+		};
+		EA9630A3208E955600A1B26E /* OutrunnerWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA9630A4208E955600A1B26E /* InterfaceController.swift */,
+				EA9630A6208E955600A1B26E /* ExtensionDelegate.swift */,
+				EA9630A8208E955600A1B26E /* Assets.xcassets */,
+				EA9630AA208E955600A1B26E /* Info.plist */,
+			);
+			path = "OutrunnerWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +164,51 @@
 				EA963078208E94AA00A1B26E /* Sources */,
 				EA963079208E94AA00A1B26E /* Frameworks */,
 				EA96307A208E94AA00A1B26E /* Resources */,
+				EA9630B5208E955600A1B26E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EA9630AC208E955600A1B26E /* PBXTargetDependency */,
 			);
 			name = Outrunner;
 			productName = Outrunner;
 			productReference = EA96307C208E94AA00A1B26E /* Outrunner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EA963092208E955600A1B26E /* OutrunnerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA9630B2208E955600A1B26E /* Build configuration list for PBXNativeTarget "OutrunnerWatch" */;
+			buildPhases = (
+				EA963091208E955600A1B26E /* Resources */,
+				EA9630B1208E955600A1B26E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA9630A2208E955600A1B26E /* PBXTargetDependency */,
+			);
+			name = OutrunnerWatch;
+			productName = OutrunnerWatch;
+			productReference = EA963093208E955600A1B26E /* OutrunnerWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EA96309E208E955600A1B26E /* OutrunnerWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA9630AE208E955600A1B26E /* Build configuration list for PBXNativeTarget "OutrunnerWatch Extension" */;
+			buildPhases = (
+				EA96309B208E955600A1B26E /* Sources */,
+				EA96309C208E955600A1B26E /* Frameworks */,
+				EA96309D208E955600A1B26E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OutrunnerWatch Extension";
+			productName = "OutrunnerWatch Extension";
+			productReference = EA96309F208E955600A1B26E /* OutrunnerWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +221,14 @@
 				ORGANIZATIONNAME = "Tony Rivera";
 				TargetAttributes = {
 					EA96307B208E94AA00A1B26E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EA963092208E955600A1B26E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EA96309E208E955600A1B26E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +248,8 @@
 			projectRoot = "";
 			targets = (
 				EA96307B208E94AA00A1B26E /* Outrunner */,
+				EA963092208E955600A1B26E /* OutrunnerWatch */,
+				EA96309E208E955600A1B26E /* OutrunnerWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +265,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA963091208E955600A1B26E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA963099208E955600A1B26E /* Assets.xcassets in Resources */,
+				EA963097208E955600A1B26E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA96309D208E955600A1B26E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9630A9208E955600A1B26E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +294,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA96309B208E955600A1B26E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9630A7208E955600A1B26E /* ExtensionDelegate.swift in Sources */,
+				EA9630A5208E955600A1B26E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA9630A2208E955600A1B26E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA96309E208E955600A1B26E /* OutrunnerWatch Extension */;
+			targetProxy = EA9630A1208E955600A1B26E /* PBXContainerItemProxy */;
+		};
+		EA9630AC208E955600A1B26E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA963092208E955600A1B26E /* OutrunnerWatch */;
+			targetProxy = EA9630AB208E955600A1B26E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EA963083208E94AA00A1B26E /* Main.storyboard */ = {
@@ -158,6 +333,14 @@
 				EA963089208E94AA00A1B26E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA963095208E955600A1B26E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA963096208E955600A1B26E /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +483,80 @@
 			};
 			name = Release;
 		};
+		EA9630AF208E955600A1B26E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XH46FDW4X;
+				INFOPLIST_FILE = "OutrunnerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riveratony.Outrunner.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		EA9630B0208E955600A1B26E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XH46FDW4X;
+				INFOPLIST_FILE = "OutrunnerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riveratony.Outrunner.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		EA9630B3208E955600A1B26E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XH46FDW4X;
+				IBSC_MODULE = OutrunnerWatch_Extension;
+				INFOPLIST_FILE = OutrunnerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riveratony.Outrunner.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		EA9630B4208E955600A1B26E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XH46FDW4X;
+				IBSC_MODULE = OutrunnerWatch_Extension;
+				INFOPLIST_FILE = OutrunnerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riveratony.Outrunner.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +574,24 @@
 			buildConfigurations = (
 				EA96308F208E94AA00A1B26E /* Debug */,
 				EA963090208E94AA00A1B26E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA9630AE208E955600A1B26E /* Build configuration list for PBXNativeTarget "OutrunnerWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA9630AF208E955600A1B26E /* Debug */,
+				EA9630B0208E955600A1B26E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA9630B2208E955600A1B26E /* Build configuration list for PBXNativeTarget "OutrunnerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA9630B3208E955600A1B26E /* Debug */,
+				EA9630B4208E955600A1B26E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
