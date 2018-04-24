@@ -11,7 +11,7 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    @IBOutlet var odometer: WKInterfaceLabel!
+    @IBOutlet var odometerLabel: WKInterfaceLabel!
     var gps = GPS()
 
     override func awake(withContext context: Any?) {
@@ -35,7 +35,8 @@ class InterfaceController: WKInterfaceController {
 
 extension InterfaceController: GPSDelegate {
     func odometer(speed: Double) {
-        odometer.setText(String(format: "%.0f",(speed * 2.23694)))
+        odometerLabel.setText(String(format: "%.0f",(speed * 2.23694)))
+        print(speed)
     }
 
 }
