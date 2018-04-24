@@ -8,18 +8,24 @@
 
 import CoreLocation
 
+protocol GPSDelegate {
+    func odometer(speed: Double)
+}
+
 class GPS: NSObject, CLLocationManagerDelegate {
     
+    var gpsDelegate: GPSDelegate!
     let locationManager: CLLocationManager = CLLocationManager()
     
     func startGPS() {
-        self.locationManager.delegate = self
-        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-        self.locationManager.startUpdatingLocation()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        locationManager.startUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print(locationManager.location!.speed)
+        gpsDelegate.odometer(speed: locationManager.location!.speed)
     }
 }

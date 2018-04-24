@@ -9,8 +9,10 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
+
+    @IBOutlet var odometer: WKInterfaceLabel!
+    var gps = GPS()
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -21,12 +23,19 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        
+        gps.startGPS()
+        gps.gpsDelegate = self as GPSDelegate
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+}
+
+extension InterfaceController: GPSDelegate {
+    func odometer(speed: Double) {
+        odometer.setText(String(format: "%.0f",(speed * 2.23694)))
     }
 
 }
