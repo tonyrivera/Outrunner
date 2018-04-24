@@ -23,6 +23,10 @@
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" name="DS-Digital-Bold" family="DS-Digital" pointSize="50"/>
                         </label>
+                        <label alignment="center" verticalAlignment="center" text="MPH" id="6og-WF-P3z">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="odometer" destination="s3h-md-O7e" id="gkP-8N-Oal"/>
