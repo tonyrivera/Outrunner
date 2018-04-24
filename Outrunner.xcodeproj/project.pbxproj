@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA65A8EA208EEBEB009BF26C /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = EA65A8E9208EEBEB009BF26C /* DS-DIGIB.TTF */; };
+		EA65A8EB208EEBEB009BF26C /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = EA65A8E9208EEBEB009BF26C /* DS-DIGIB.TTF */; };
 		EA963080208E94AA00A1B26E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA96307F208E94AA00A1B26E /* AppDelegate.swift */; };
 		EA963082208E94AA00A1B26E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA963081208E94AA00A1B26E /* ViewController.swift */; };
 		EA963085208E94AA00A1B26E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA963083208E94AA00A1B26E /* Main.storyboard */; };
@@ -67,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA65A8E9208EEBEB009BF26C /* DS-DIGIB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGIB.TTF"; sourceTree = "<group>"; };
 		EA96307C208E94AA00A1B26E /* Outrunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outrunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA96307F208E94AA00A1B26E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA963081208E94AA00A1B26E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,9 +109,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA65A8E8208EEBBD009BF26C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EA65A8E9208EEBEB009BF26C /* DS-DIGIB.TTF */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		EA963073208E94AA00A1B26E = {
 			isa = PBXGroup;
 			children = (
+				EA65A8E8208EEBBD009BF26C /* Font */,
 				EA96307E208E94AA00A1B26E /* Outrunner */,
 				EA963094208E955600A1B26E /* OutrunnerWatch */,
 				EA9630A3208E955600A1B26E /* OutrunnerWatch Extension */,
@@ -286,6 +298,7 @@
 				EA96308A208E94AA00A1B26E /* LaunchScreen.storyboard in Resources */,
 				EA963087208E94AA00A1B26E /* Assets.xcassets in Resources */,
 				EA963085208E94AA00A1B26E /* Main.storyboard in Resources */,
+				EA65A8EA208EEBEB009BF26C /* DS-DIGIB.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9630A9208E955600A1B26E /* Assets.xcassets in Resources */,
+				EA65A8EB208EEBEB009BF26C /* DS-DIGIB.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

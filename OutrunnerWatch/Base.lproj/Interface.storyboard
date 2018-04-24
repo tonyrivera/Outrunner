@@ -8,13 +8,21 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="DS-DIGIB.TTF">
+            <string>DS-Digital-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="OutrunnerWatch" customModuleProvider="target">
                     <items>
-                        <label width="35" alignment="center" verticalAlignment="center" text="0" id="s3h-md-O7e"/>
+                        <label alignment="center" verticalAlignment="center" text="00" id="s3h-md-O7e">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" name="DS-Digital-Bold" family="DS-Digital" pointSize="50"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="odometer" destination="s3h-md-O7e" id="gkP-8N-Oal"/>
