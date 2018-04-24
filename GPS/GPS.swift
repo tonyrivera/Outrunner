@@ -25,7 +25,6 @@ class GPS: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print(locationManager.location!.speed)
         gpsDelegate.odometer(speed: locationManager.location!.speed)
     }
 }
