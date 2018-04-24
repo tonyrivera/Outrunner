@@ -36,7 +36,6 @@ class InterfaceController: WKInterfaceController {
 extension InterfaceController: GPSDelegate {
     func odometer(speed: Double) {
         odometerLabel.setText(String(format: "%.0f",(speed * 2.23694)))
-        print(speed)
     }
 
 }
