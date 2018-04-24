@@ -29,7 +29,7 @@
                         </label>
                     </items>
                     <connections>
-                        <outlet property="odometer" destination="s3h-md-O7e" id="gkP-8N-Oal"/>
+                        <outlet property="odometerLabel" destination="s3h-md-O7e" id="OhQ-sq-qR9"/>
                     </connections>
                 </controller>
             </objects>
